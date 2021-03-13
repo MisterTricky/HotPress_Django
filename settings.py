@@ -15,7 +15,7 @@ import django
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from HotPress.defines import WINDOWS_VUE_FRONTEND_DIR, UNIX_VUE_FRONTEND_DIR, WINDOWS_BASE_DIR, UNIX_BASE_DIR
+from defines import WINDOWS_VUE_FRONTEND_DIR, UNIX_VUE_FRONTEND_DIR, WINDOWS_BASE_DIR, UNIX_BASE_DIR
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

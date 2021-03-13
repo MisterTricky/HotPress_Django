@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from utility.models import UserProfile, UserProfileBaseModel
+from HotPressAdmin.Utilities.models import UserProfile, UserProfileBaseModel
 
 
 # Create your models here.
@@ -120,7 +120,7 @@ class ServiceHistory(models.Model):
     office_name = models.CharField(max_length=255, blank=True, null=True)
     section = models.CharField(max_length=255, blank=True, null=True)
     date_from = models.DateField(blank=True, null=True)
-    date_from = models.DateField(blank=True, null=True)
+    date_to = models.DateField(blank=True, null=True)
 
 
 class Employee_Achievement(models.Model):

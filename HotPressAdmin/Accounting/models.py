@@ -3,7 +3,10 @@ from django.db import models
 from django.contrib import admin
 from django.utils.translation import ugettext as _
 # Import predefined Values for Accounting models
-from Accounting.defines import *
+
+
+from HotPressAdmin.Accounting.defines import TRANSACTION_STATUS_CHOICES, TRANSACTION_TYPE_CHOICES
+from HotPressAdmin.HumanResources.models import Employee
 
 
 class AccountYear(models.Model):
@@ -47,7 +50,7 @@ class Ledger(models.Model):
         return self.name
 
 
-class Transaction(models.BaseModel):
+class Transaction(models.Model):
     transaction_type = models.CharField(max_length=(32),
                                         choices=TRANSACTION_TYPE_CHOICES,
                                         blank=True)
